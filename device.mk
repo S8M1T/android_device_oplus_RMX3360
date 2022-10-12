@@ -47,3 +47,6 @@ $(call inherit-product, vendor/oplus/RMX3360/RMX3360-vendor.mk)
 
 # Extras
 $(call inherit-product, vendor/extra/product.mk)
+
+# Call proprietary apps
+$(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
